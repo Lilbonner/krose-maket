@@ -13,12 +13,12 @@ export default function Header() {
                 <Image src="/logo.svg" alt="Logo" width={140} height={80} />
             </div>
 
-            <nav className="hidden lg:flex items-center gap-6 text-sm font-xl pt-8">
-                <Link href="#" className="hover:text-green-400 transition">Home</Link>
-                <Link href="#" className="hover:text-green-400 transition">About Us</Link>
-                <Link href="#" className="hover:text-green-400 transition">Services</Link>
-                <Link href="#" className="hover:text-green-400 transition">Pages</Link>
-                <Link href="#" className="hover:text-green-400 transition">Contact Us</Link>
+            <nav className="hidden lg:flex  gap-6 text-sm font-xl pt-8">
+                <Link href="/" className="hover:text-green-400 transition">Home</Link>
+                <Link href="/about" className="hover:text-green-400 transition">About Us</Link>
+                <Link href="/service" className="hover:text-green-400 transition">Services</Link>
+                <Link href="/pages" className="hover:text-green-400 transition">Pages</Link>
+                <Link href="/contact" className="hover:text-green-400 transition">Contact Us</Link>
             </nav>
 
             <div className="hidden lg:flex items-center gap-6">

@@ -1,7 +1,7 @@
 import './globals.css'
 import { ReactNode } from 'react'
 import Header from "@/app/components/Header";
-import { Poppins } from "next/dist/compiled/@next/font/dist/google";
+import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
     subsets: ['latin'],
