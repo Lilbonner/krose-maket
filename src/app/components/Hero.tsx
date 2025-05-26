@@ -1,27 +1,21 @@
-'use client'
-
-import Link from 'next/link'
-import Image from "next/image";
-
 export default function Hero() {
     return (
-        <section className="relative bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center text-center ">
-            <div className="relative z-10 text-white px-4 max-w-2xl mx-auto">
-                <h2 className="text-xl uppercase tracking-wider mb-4 text-blue-400 animate-fade-in delay-200">
-                    Welcome to Krose
-                </h2>
-                <h1 className="text-5xl font-extrabold mb-6 animate-fade-in delay-400">
-                    The Best Event Planning Agency
+        <section className="h-screen bg-[url('/hero-bg.png')] bg-cover bg-center text-white flex items-center px-8 rounded-xl">
+            <div className="max-w-3xl">
+                <p className="text-sm tracking-widest text-green-400">// WELCOME TO INFINE.</p>
+                <h1 className="text-5xl font-extrabold leading-tight mt-2">
+                    Expert your life & <br />
+                    <span className="text-green-400">business coaching</span>
                 </h1>
-                <p className="mb-8 text-lg animate-fade-in delay-600">
-                    We make your events memorable with creativity, passion and professionalism.
-                </p>
-                <Link
-                    href="/contact"
-                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded transition animate-fade-in delay-800"
-                >
-                    Contact Us
-                </Link>
+
+                <div className="mt-6 flex gap-4">
+                    <button className="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90">
+                        Get In Touch →
+                    </button>
+                    <button className="bg-white text-gray-800 px-6 py-3 rounded-full font-semibold hover:opacity-90">
+                        Explore More →
+                    </button>
+                </div>
             </div>
         </section>
     )

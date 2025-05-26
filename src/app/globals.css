@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '@fortawesome/fontawesome-free/css/all.min.css';
 
 @layer utilities {
     .animate-fade-in {
