@@ -8,12 +8,12 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
-        <header className="absolute top-0 left-0 w-full z-50 px-8 py-4 flex items-center justify-between text-white pt-4 m-10 border-b-1 ">
-            <div className="flex items-center gap-2">
+        <header className="absolute top-10 left-0 w-full z-50 px-6 md:px-12 py-4 flex items-center justify-between text-white border-b border-gray-200">
+            <div className="flex items-center space-x-2 pl-12">
                 <Image src="/logo.svg" alt="Logo" width={140} height={80} />
             </div>
 
-            <nav className="hidden lg:flex  gap-6 text-sm font-xl pt-8">
+            <nav className="hidden lg:flex items-center space-x-6 text-sm font-semibold">
                 <Link href="/" className="hover:text-green-400 transition">Home</Link>
                 <Link href="/about" className="hover:text-green-400 transition">About Us</Link>
                 <Link href="/service" className="hover:text-green-400 transition">Services</Link>
@@ -21,30 +21,44 @@ export default function Header() {
                 <Link href="/contact" className="hover:text-green-400 transition">Contact Us</Link>
             </nav>
 
-            <div className="hidden lg:flex items-center gap-6">
-                <div className="flex items-center gap-2 text-sm">
-                    <span className="text-xl">📞</span>
+            <div className="hidden lg:flex items-center space-x-6 text-sm">
+                <div className="flex items-center space-x-2">
+                    <span className="text-lg">📞</span>
                     <span>+01 789 859 664</span>
                 </div>
-
-                {menuOpen && (
-                    <div className="lg:hidden flex flex-col space-y-4 pb-4 text-gray-700">
-                        <Link href="/">Home</Link>
-                        <Link href="/about">About Us</Link>
-                        <Link href="/service">Services</Link>
-                        <Link href="/contact">Contact</Link>
-                        <a href="tel:+789859664" className="font-semibold">
-                            +01 789 859 664
-                        </a>
-                        <Link
-                            href="/contact"
-                            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                        >
-                            Get in Touch
-                        </Link>
-                    </div>
-                )}
+                <Link
+                    href="/contact"
+                    className="bg-gradient-to-r from-green-400 to-green-600 text-white px-4 py-2 rounded-full font-medium hover:opacity-90 transition"
+                >
+                    Get In Touch →
+                </Link>
             </div>
+
+            <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                className="lg:hidden text-white focus:outline-none w-24"
+            >
+                ☰
+            </button>
+
+            {menuOpen && (
+                <div className="absolute top-full left-0 w-full bg-white text-gray-800 px-6 py-4 flex flex-col space-y-4 lg:hidden">
+                    <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
+                    <Link href="/about" onClick={() => setMenuOpen(false)}>About Us</Link>
+                    <Link href="/service" onClick={() => setMenuOpen(false)}>Services</Link>
+                    <Link href="/pages" onClick={() => setMenuOpen(false)}>Pages</Link>
+                    <Link href="/contact" onClick={() => setMenuOpen(false)}>Contact Us</Link>
+                    <a href="tel:+789859664" className="font-semibold">
+                        +01 789 859 664
+                    </a>
+                    <Link
+                        href="/contact"
+                        className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+                    >
+                        Get in Touch →
+                    </Link>
+                </div>
+            )}
         </header>
     )
 }

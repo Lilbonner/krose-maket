@@ -1,7 +1,11 @@
+'use client'
+
 import './globals.css'
-import { ReactNode } from 'react'
+import { ReactNode, useEffect } from 'react'
 import Header from "@/app/components/Header";
 import { Poppins } from "next/font/google";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const poppins = Poppins({
     subsets: ['latin'],
@@ -9,15 +13,18 @@ const poppins = Poppins({
     variable: '--font-poppins'
 })
 
-export const metadata = {
-    title: 'My App',
-    description: 'Next.js + Tailwind App',
-}
-
 export default function RootLayout({ children }: { children: ReactNode }) {
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+        })
+    }, [])
+
     return (
         <html lang="en" className={poppins.variable}>
-        <body>
+        <body className="font-sans">
         <Header />
         {children}
         </body>
