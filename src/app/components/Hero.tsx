@@ -10,13 +10,13 @@ export default function Hero() {
         <section
             className="bg-fixed relative h-screen bg-[url('/hero-bg.png')] bg-cover bg-center text-white flex items-center px-6 md:px-12 rounded-3xl">
             <div
-                className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-black/40 to-transparent z-0 pointer-events-none"/>
-            <div
-                className="absolute top-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-black/10 to-transparent z-0 pointer-events-none"/>
-            <div
-                className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-tr from-black/10 to-transparent z-0 pointer-events-none"/>
-            <div
-                className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-tr from-black/6 to-transparent z-0 pointer-events-none"/>
+                className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-tr from-black/80 to-black-10 z-0 pointer-events-none"/>
+            {/*<div*/}
+            {/*    className="absolute top-0 left-0 w-1/2 h-1/2  bg-gradient-to-tr from-black/10 to-black-10 z-0 pointer-events-none"/>*/}
+            {/*<div*/}
+            {/*    className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-tr from-black/10 to-transparent z-0 pointer-events-none"/>*/}
+            {/*<div*/}
+            {/*    className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-tr from-black/6 to-transparent z-0 pointer-events-none"/>*/}
 
             <div className="max-w-3xl" data-aos="fade-up">
                 <p className="text-sm tracking-widest text-green-400">// WELCOME TO KROSE.</p>
@@ -36,7 +36,7 @@ export default function Hero() {
                     </button>
                 </div>
 
-                <div className="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5  text-gray-500 pt-32"
+                <div className="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 text-gray-500 pt-32 max-w-2xl"
                      data-aos="fade-up" data-aos-delay="200">
                     <div className='border-t-2 border-gray-300 flex pl-12 hover:border-green-400 delay-100'>
                         <p className="font-semibold"><LegendToggleIcon/> Tailored Coaching Solutions</p>
