@@ -44,16 +44,23 @@ export default function Hero() {
                     <Feature icon={<PanoramaFishEye/>} text="Flexible Client-Centered"/>
                     <Feature icon={<WorkspacePremium/>} text="Expert Guidance"/>
                 </div>
+
             </div>
         </section>
     )
 }
 
-function Feature({icon, text}: { icon: React.ReactNode; text: string }) {
+function Feature({ icon, text }: { icon: React.ReactNode; text: string }) {
     return (
-        <div className="border-t-2 border-gray-400 pt-3 flex items-center gap-2 hover:border-green-400 hover:opacity-80 transition">
-            <span className="text-green-400">{icon}</span>
-            <span className="text-sm font-semibold">{text}</span>
+        <div className="group relative overflow-hidden cursor-pointer transition duration-300">
+            <span className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+
+            <div className="border-t-2 border-gray-400 pt-3 flex items-center gap-2 group-hover:border-transparent transition">
+                <span className="text-green-400">{icon}</span>
+                <span className="text-sm font-semibold text-gray-300 group-hover:text-white transition">
+          {text}
+        </span>
+            </div>
         </div>
     )
 }
