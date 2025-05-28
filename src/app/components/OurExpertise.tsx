@@ -1,6 +1,27 @@
+import Image from "next/image";
 
 export default function OurExpertise() {
+    const expertise = [
+        { title: "Communication Coaching", image: "/expertise.png" },
+        { title: "Strategy", image: "/expertise.png" },
+        { title: "Personal Coaching", image: "/expertise.png" },
+        { title: "Health Coach", image: "/expertise.png" },
+        { title: "Productivity & Efficiency Coaching", image: "/expertise.png" },
+        { title: "Marketing Coaching", image: "/expertise.png" },
+        { title: "Leadership", image: "/expertise.png" },
+        { title: "Career Transition Coaching", image: "/expertise.png" },
+    ];
 
+    const offsets = [
+        "ml-50",
+        "ml-80",
+        "ml-30",
+        "ml-90",
+        "ml-10",
+        "ml-80",
+        "ml-30",
+        "ml-50 mt-5",
+    ];
 
     return (
         <section className="relative bg-[#f7f7f5] py-24 px-6 lg:px-20 rounded-3xl">
@@ -20,6 +41,25 @@ export default function OurExpertise() {
                     </button>
                 </div>
 
+                <div className="flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                    {expertise.map((item, index) => (
+                        <div
+                            key={index}
+                            className={`flex items-center w-full max-w-md bg-white rounded-full shadow-md  ${offsets[index]} transition-all`}
+                            data-aos="fade-up"
+                            data-aos-delay={index * 100}
+                        >
+                            <Image
+                                src={item.image}
+                                alt={item.title}
+                                width={50}
+                                height={40}
+                                className="object-cover rounded-full"
+                            />
+                            <span className="pl-4 text-sm text-gray-800 whitespace-nowrap">{item.title}</span>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );
