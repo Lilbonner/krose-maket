@@ -33,7 +33,7 @@ export default function WhoWeAre() {
                     <div ref={ref} className="flex items-center gap-10 mt-10">
                         <div className="text-center">
                             <div className="w-24 h-24 rounded-full border-2 border-green-400 flex items-center justify-center text-2xl font-bold text-[#02221C]">
-                                <p>{inView ? <CountUp end={98} duration={6} /> : '0'}%</p>
+                                <p>{inView ? <CountUp end={98} duration={7} /> : '0'}%</p>
                             </div>
                             <p className="mt-2 text-sm text-[#02221C]">Satisfied Customers</p>
                         </div>
