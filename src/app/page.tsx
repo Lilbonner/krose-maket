@@ -5,6 +5,7 @@ import WhoWeAre from "@/app/components/WhoWeAre";
 import Pricing from "@/app/components/Pricing";
 import OurExpertise from "@/app/components/OurExpertise";
 import VideoComp from "@/app/components/Video-comp";
+import HowWeWork from "@/app/components/HowWeWork";
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
             <Pricing />
             <OurExpertise />
             <VideoComp />
+            <HowWeWork />
         </div>
     )
 }
