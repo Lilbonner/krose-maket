@@ -37,7 +37,18 @@ export default function HowWeWork() {
                 <p className="text-gray-500 mb-12">
                     Our process is designed to ensure your success every step of the way.
                 </p>
-                
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                    {steps.map((step, index) => (
+                        <div key={index} className="p-6 rounded-lg hover:shadow-lg transition">
+                            <div className="flex justify-center mb-4">
+                                {step.icon}
+                            </div>
+                            <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                            <p className="text-gray-500">{step.description}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );
