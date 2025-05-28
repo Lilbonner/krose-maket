@@ -3,6 +3,7 @@ import About from "@/app/components/About";
 import Services from "@/app/components/Services";
 import WhoWeAre from "@/app/components/WhoWeAre";
 import Pricing from "@/app/components/Pricing";
+import OurExpertise from "@/app/components/OurExpertise";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <Services />
             <WhoWeAre />
             <Pricing />
+            <OurExpertise />
         </div>
     )
 }
