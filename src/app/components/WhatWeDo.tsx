@@ -56,6 +56,23 @@ export default function WhatWeDo() {
                     </p>
                 </div>
 
+                <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 lg:col-span-2" data-aos="fade-up">
+                    {services.map((service, index) => (
+                        <div
+                            key={index}
+                            className="flex items-start gap-4 bg-white p-5 rounded-xl shadow-md hover:shadow-lg transition"
+                            data-aos="fade-up"
+                            data-aos-delay={index * 80}
+                        >
+                            <div className="flex flex-col">
+                                <h3 className="text-3xl text-green-600 font-bold">{service.data}</h3>
+                                <h3 className="text-md font-semibold mb-1">{service.title}</h3>
+                                <p className="text-sm text-gray-500">{service.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
             </div>
         </section>
 
