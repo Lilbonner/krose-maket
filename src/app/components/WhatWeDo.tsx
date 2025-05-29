@@ -50,10 +50,13 @@ export default function WhatWeDo() {
                         Discover our <span className="text-green-600">areas of expertise</span>
                     </h2>
                     <p className="text-gray-500 mb-10">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since
-
-
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been
+                        the industry's standard dummy text ever since
                     </p>
+                    <button
+                        className="bg-gradient-to-r from-green-500 to-green-700 text-white px-6 py-2 mt-10 rounded-full text-lg font-medium shadow-md hover:opacity-80 transition cursor-pointer">
+                        Get Started
+                    </button>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 lg:col-span-2" data-aos="fade-up">
