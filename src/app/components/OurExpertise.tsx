@@ -13,15 +13,16 @@ export default function OurExpertise() {
     ];
 
     const offsets = [
-        "ml-50",
-        "ml-80",
-        "ml-30",
-        "ml-90",
-        "ml-10",
-        "ml-80",
-        "ml-30",
-        "ml-50 mt-5",
+        "pl-20 lg:pl-50",
+        "pl-30 lg:pl-80",
+        "pl-10 lg:pl-30",
+        "pl-40 lg:pl-90",
+        "pl-0 lg:pl-10",
+        "pl-30 lg:pl-80",
+        "pl-10 lg:pl-30",
+        "pl-20 lg:pl-50 mt-4",
     ];
+
 
     return (
         <section className="relative bg-[#f7f7f5] py-24 px-6 lg:px-20 rounded-3xl">
