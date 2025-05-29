@@ -6,22 +6,22 @@ import AccessibilityNewOutlinedIcon from "@mui/icons-material/AccessibilityNewOu
 const steps = [
     {
         icon: <Lightbulb className="w-10 h-10 text-green-500" />,
-        title: 'Discover',
-        description: 'Understanding your needs and gathering insights.'
+        title: '01. Assessment',
+        description: ' Understanding your needs and gathering insights.'
     },
     {
         icon: <Users className="w-10 h-10 text-green-500" />,
-        title: 'Plan',
+        title: '02. Goal Setting',
         description: 'Strategizing and setting goals for success.'
     },
     {
         icon: <Briefcase className="w-10 h-10 text-green-500" />,
-        title: 'Execute',
+        title: '03. Coaching Sessions',
         description: 'Turning plans into action with precision.'
     },
     {
         icon: <Target className="w-10 h-10 text-green-500" />,
-        title: 'Deliver',
+        title: '04. Ongoing Support',
         description: 'Providing results and continuous improvement.'
     }
 ];
@@ -33,13 +33,13 @@ export default function HowWeWork() {
                 // <span className="text-green-900 text-md font-medium">How we work</span>
             </p>
             <div className="max-w-6xl mx-auto px-4">
-                <h2 className="text-5xl font-md mb-4">Step by step process for<br/>
-                    <span className="text-green-600 from-green-400 to-blue-300">achieving success</span></h2>
-                <p className="text-gray-500 mb-12">
+                <h2 className="text-5xl font-md mb-4" data-aos="fade-up" data-aos-delay="150">Step by step process for<br/>
+                    <span className="text-green-600 from-green-400 to-blue-300"  data-aos="fade-up" data-aos-delay="200">achieving success</span></h2>
+                <p className="text-gray-500 mb-12"  data-aos="fade-up" data-aos-delay="250">
                     Our process is designed to ensure your success every step of the way.
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"  data-aos="fade-up" data-aos-delay="300">
                     {steps.map((step, index) => (
                         <div key={index} className="p-6 rounded-lg hover:shadow-lg transition ">
                             <div
