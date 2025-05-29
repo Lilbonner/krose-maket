@@ -8,6 +8,7 @@ import VideoComp from "@/app/components/Video-comp";
 import HowWeWork from "@/app/components/HowWeWork";
 import Marquee from "@/app/components/Marquee";
 import WhatWeDo from "@/app/components/WhatWeDo";
+import News from "@/app/components/news";
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
             <HowWeWork />
             <Marquee />
             <WhatWeDo />
+            <News />
         </div>
     )
 }
