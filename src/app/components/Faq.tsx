@@ -61,6 +61,32 @@ export default function FAQSection() {
                     </div>
                 </div>
             </div>
+
+            <div className="flex flex-col gap-4">
+                {faqItems.map((item, index) => (
+                    <div key={index}>
+                        <button
+                            className="w-full text-left p-4 bg-white rounded-xl shadow-md flex justify-between items-center text-base font-semibold hover:bg-gray-50 transition"
+                            onClick={() =>
+                                setActiveIndex(index === activeIndex ? null : index)
+                            }
+                        >
+                            {item.question}
+                            {index === activeIndex ? (
+                                <IoClose className="text-xl text-gray-500" />
+                            ) : (
+                                <FaPlus className="text-sm text-gray-500" />
+                            )}
+                        </button>
+
+                        {index === activeIndex && (
+                            <div className="mt-2 p-4 rounded-xl bg-gradient-to-br from-green-500 to-green-400 text-white text-sm shadow-md">
+                                {item.answer}
+                            </div>
+                        )}
+                    </div>
+                ))}
+            </div>
         </section>
     );
 }
