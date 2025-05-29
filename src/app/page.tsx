@@ -6,6 +6,7 @@ import Pricing from "@/app/components/Pricing";
 import OurExpertise from "@/app/components/OurExpertise";
 import VideoComp from "@/app/components/Video-comp";
 import HowWeWork from "@/app/components/HowWeWork";
+import Marquee from "@/app/components/Marquee";
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
             <OurExpertise />
             <VideoComp />
             <HowWeWork />
+            <Marquee />
         </div>
     )
 }
