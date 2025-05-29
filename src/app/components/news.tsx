@@ -49,6 +49,37 @@ export default function News() {
                     </button>
                 </div>
 
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-8" data-aos="fade-up" data-aos-delay="700">
+                    {news.map((plan, index) => (
+                        <div
+                            key={index}
+                            className={`flex gap-6 items-center p-6 rounded-2xl shadow-sm ${
+                                plan.highlight
+                                    }`}
+                        >
+                            <Image
+                                src={plan.photo}
+                                alt="news"
+                                width={300}
+                                height={300}
+                                className="rounded-xl object-cover flex-shrink-0 cursor-pointer"
+                            />
+                            <div className="flex flex-col">
+                                <h3 className="text-lg font-semibold">{plan.title}</h3>
+                                <p className="text-base mt-2">{plan.news}</p>
+                                <button
+                                    className={`mt-4 px-4 py-2 rounded-full text-sm font-medium transition ${
+                                        plan.highlight
+                                            ? "bg-gradient-to-r from-green-400 to-green-600 text-white hover:opacity-80 cursor-pointer"
+                                            : "bg-gradient-to-r from-green-400 to-green-600 text-white hover:opacity-70 cursor-pointer" 
+                                    }`}
+                                >
+                                    Read More →
+                                </button>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
 
             <div
