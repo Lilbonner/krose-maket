@@ -66,7 +66,7 @@ export default function FAQSection() {
                 {faqItems.map((item, index) => (
                     <div key={index}>
                         <button
-                            className="w-full text-left p-4 bg-white rounded-xl shadow-md flex justify-between items-center text-base font-semibold hover:bg-gray-50 transition"
+                            className="w-full text-left p-4 bg-white rounded-xl shadow-md flex justify-between items-center text-base font-semibold hover:bg-gray-50 transition cursor-pointer"
                             onClick={() =>
                                 setActiveIndex(index === activeIndex ? null : index)
                             }
@@ -80,7 +80,7 @@ export default function FAQSection() {
                         </button>
 
                         {index === activeIndex && (
-                            <div className="mt-2 p-4 rounded-xl bg-gradient-to-br from-green-500 to-green-400 text-white text-sm shadow-md">
+                            <div className="mt-2 p-4 rounded-xl bg-gradient-to-br from-green-500 to-green-400 text-white text-sm shadow-md" data-aos="fade-left">
                                 {item.answer}
                             </div>
                         )}
