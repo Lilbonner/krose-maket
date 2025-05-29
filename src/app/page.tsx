@@ -10,6 +10,7 @@ import Marquee from "@/app/components/Marquee";
 import WhatWeDo from "@/app/components/WhatWeDo";
 import News from "@/app/components/News";
 import Footer from "@/app/components/Footer";
+import Faq from "@/app/components/Faq";
 
 export default function Home() {
     return (
@@ -24,6 +25,7 @@ export default function Home() {
             <HowWeWork />
             <Marquee />
             <WhatWeDo />
+            <Faq />
             <News />
             <Footer />
         </div>
