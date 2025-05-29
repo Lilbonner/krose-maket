@@ -8,7 +8,7 @@ import VideoComp from "@/app/components/Video-comp";
 import HowWeWork from "@/app/components/HowWeWork";
 import Marquee from "@/app/components/Marquee";
 import WhatWeDo from "@/app/components/WhatWeDo";
-import News from "@/app/components/news";
+import News from "@/app/components/News";
 import Footer from "@/app/components/Footer";
 
 export default function Home() {

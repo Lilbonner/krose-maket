@@ -70,13 +70,13 @@ export default function News() {
                                 alt="news"
                                 width={400}
                                 height={400}
-                                className="rounded-xl object-cover w-full sm:w-[180px] h-auto"
+                                className="rounded-xl object-cover w-full sm:w-[280px] h-auto"
                             />
                             <div className="flex flex-col">
                                 <h3 className="text-lg sm:text-xl font-semibold">{plan.title}</h3>
                                 <p className="text-sm sm:text-base mt-2">{plan.news}</p>
                                 <button
-                                    className={`mt-4 px-4 py-2 rounded-full text-sm font-medium transition ${
+                                    className={`mt-4 px-4 py-2 rounded-full text-sm font-medium transition w-30 ${
                                         plan.highlight
                                             ? "bg-white text-green-600 hover:opacity-80 cursor-pointer"
                                             : "bg-gradient-to-r from-green-400 to-green-600 text-white hover:opacity-70 cursor-pointer"
