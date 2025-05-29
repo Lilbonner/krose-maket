@@ -40,7 +40,7 @@ export default function Pricing() {
     return (
         <section className="relative bg-[#F7F7F5] py-24 px-6 lg:px-20 rounded-3xl">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start relative z-10">
-                <div className="sticky top-32 self-start h-fit" data-aos="fade-up" data-aos-dela="600">
+                <div className="md:sticky md:top-32 self-start h-fit" data-aos="fade-up" data-aos-dela="600">
                     <p className="text-green-600 text-sm font-semibold">// Pricing</p>
                     <h2 className="text-4xl md:text-5xl font-light leading-tight mt-2">
                         Coaching<br />

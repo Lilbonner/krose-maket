@@ -60,7 +60,7 @@ export default function Services() {
     return (
         <section className="relative bg-[#02221C] text-white py-24 px-6 lg:px-20 rounded-3xl">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start relative z-10">
-                <div className="sticky top-32 self-start h-fit" data-aos="fade-up">
+                <div className="md:sticky md:top-32 self-start h-fit" data-aos="fade-up">
                     <p className="text-green-400 text-sm font-semibold">// Services</p>
                     <h2 className="text-4xl md:text-5xl font-bold leading-tight mt-2">
                         Comprehensive coaching for life and{' '}
